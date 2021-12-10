@@ -1,0 +1,189 @@
+/* 父容器 */
+#bbQaGame {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0px auto;
+    overflow: hidden;
+    outline: 1px solid gray;
+    background: transparent;
+}
+
+/* 背景 */
+#bgImg {
+    position: relative;
+    width: 2128px;
+    height: 400px;
+    z-index: -1;
+    background-image: url('./_img/bb/scroll-background.png');
+    background-repeat: repeat-x;
+    animation: rollBgImage linear 12s infinite paused;
+}
+@keyframes rollBgImage {
+    from { right: 0px; }
+    to { right: 1064px; }
+}
+
+/* bb圖像 */
+#bbIcon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 150px;
+    bottom: 70px;
+    background: transparent;
+    animation: moveCenter 3s linear 1 both paused;
+}
+@keyframes moveCenter{
+    0%   {left: 150px;}
+    100% {left: 360px;}
+}
+#bbIconImg{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-image: url('./_img/bb/bb-move01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: swapImage 0.4s step-start infinite paused;
+}
+
+@keyframes swapImage{
+    0%   {background-image: url('./_img/bb/bb-move01.png');}
+    50%  {background-image: url('./_img/bb/bb-move02.png');}
+    100% {background-image: url('./_img/bb/bb-move01.png');}
+}
+
+@keyframes bbDance{
+    0%   {background-image: url('./_img/bb-dance/bb-origin.png');}
+    25%   {background-image: url('./_img/bb-dance/bb-swing.png');}
+    50%   {background-image: url('./_img/bb-dance/bb-origin-horizon.png');}
+    75%   {background-image: url('./_img/bb-dance/bb-swing-horizon.png');}
+    100%   {background-image: url('./_img/bb-dance/bb-origin.png');}
+}
+
+/* 開始前的遮幕 */
+#screen {
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background: black;
+    opacity: 0.7;
+    z-index: 50;
+}
+
+/* 開始按鈕 */
+#btnStart {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    z-index: 60;
+}
+
+.modal-content {
+    border:1px solid black;
+}
+
+
+/* 每關的關主動物*/
+.animal {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: rollRightImage 3s linear 2s both paused;
+}
+#turtleIcon {
+    background-image: url('./_img/bb/turtle.png');
+}
+#octopusIcon {
+    background-image: url('./_img/bb/octopus.png');
+}
+#hammerIcon {
+    background-image: url('./_img/bb/hammer.png');
+}
+#sealIcon {
+    background-image: url('./_img/bb/seal.png');
+}
+
+
+@keyframes rollRightImage {
+    from   { right: -110px; }
+    to  { right: 150px; }
+}
+
+@keyframes rollLeftImage {
+    from   { right: 150px; }
+    to  { right: 910px; }
+}
+
+/* 對話框 card */
+#bbQaGame .card {
+    position: absolute;
+    display: none;   
+    width: 400px;
+    height: 150px;
+    top: 45px;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    animation: fadeIn 0.1s 0.1s both paused;
+    /* 原本的數值，測試完要調回來 */
+}
+
+#bbQaGame .card .btn {
+    float: right;
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+}
+
+#bbQaGame .card h4 {
+    font-weight: bold;
+}
+
+.bbCard h4,.bbCard p {
+    color:blue;
+}
+.turtleCard h4,.turtleCard p {
+    color:green;
+}
+.octopusCard h4,.octopusCard p {
+    color:palevioletred;
+}
+.hammerCard h4,.hammerCard p {
+    color:rgb(224, 151, 15);
+}
+.sealCard h4,.sealCard p {
+    color:rgb(44, 43, 43);
+}
+
+
+@keyframes fadeIn {
+    from    { opacity:0; }
+    to  { opacity:1; }
+}
+
+/* 放答案按鈕的 div */
+.optDiv {
+    position: absolute;
+    display: none;
+    /* display: flex; */
+    justify-content: space-around;
+    width: 500px;
+    top: 110px;
+    left: 150px;
+    animation: fadeIn 0.5s 0.5s both paused;
+}
+
+/* 其他 */
+h4, .card p {
+    font-size: 16px
+}
