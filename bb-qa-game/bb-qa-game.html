@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>bb QA game</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="firework.css">
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+
+
+    <!-- bb Q&A Game -->
+    <h1 class="text-center display-4"> bb減塑大進擊 </h1>
+    <div id="bbQaGame">
+        <div id="screen"></div>
+        <button id="btnStart" class="btn" onclick="startRun(0)">開始</button>
+
+        <div id="bbIcon">
+            <div id="bbIconImg"></div>
+        </div>
+        <div id="turtleIcon" class="animal"></div>
+        <div id="octopusIcon" class="animal"></div>
+        <div id="hammerIcon" class="animal"></div>
+        <div id="sealIcon" class="animal"></div>
+
+        <!-- turtle start -->
+        <div class="card dialog1Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">嗨慧慧，好久不見啊！妳怎麼站在那裡呀？</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">等你呀，說好要還我的錢呢？</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">．．．．．．</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">哎你看，那邊有好多只穿泳褲的猛男海龜耶！</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">少來，別岔開話題．．．</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">好吧，我身為一隻慈悲為懷、心胸寬大的千年神龜，今天再給你一次機會。</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">只要你能回答出我的問題，證明你「海洋保衛隊隊長」的頭銜不是白來的，我就暫時先放過你。</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Before">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">體積細小如塵埃的微塑膠，可能會透過進食或呼吸進入人體內。微塑膠（Microplastics）是指長度小於多少毫米的塑膠顆粒？</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="optDiv">
+            <button class="btn option1" value="correct">5毫米</button>
+            <button class="btn option1">10毫米</button>
+            <button class="btn option1">15毫米</button>
+        </div>
+
+        <div class="card dialog1Correct">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">答對囉！看來隊長不是白叫的。</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Correct">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">「有欠有還，再欠不難」錢還是要記得還喔。慢走不送~</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Correct">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">ㄅㄅ！ （´◔ ₃ ◔`)</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="card dialog1Wrong">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">答錯囉！虧你還自稱隊長...</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Wrong">
+            <div class="card-body turtleCard">
+                <h4 class="card-text">海龜慧慧：</h4>
+                <p class="card-text">趕快回家領錢去吧，我在這邊等你！</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog1Wrong">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">(´ﾟдﾟ`)</p>
+                <button class="btnDialog1 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <!-- turtle end -->
+
+        <!-- octopus start -->
+        <div class="card dialog2Before">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">隊長哥哥你終於來啦！人家好想你呢</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">別．．．別靠過來，有話好說！</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Before">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">不要見外嘛，我們倆都什麼關係了～</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">咳．．．咳咳，妳別這樣，我還要趕路，勞駕小姐讓讓路</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Before">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">好啦，不然考哥哥一個問題，答對了我再讓你過去</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">（怎麼每個海洋保衛隊隊員都愛出問題呀．．．）</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Before">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">過去十年裡，最多塑料垃圾流入海洋中的是那一條河流？</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="optDiv">
+            <button class="btn option2">印度河</button>
+            <button class="btn option2">尼羅河</button>
+            <button class="btn option2" value="correct">長江</button>
+        </div>
+
+
+        <div class="card dialog2Correct">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">好棒喔！哥哥答對了！</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Correct">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">那人家就不纏著你了，趕快過去吧，不要忘記要一起撿垃圾的約會喔！</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Correct">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">ㄅㄅ！（我什麼時候跟妳約了 (=m=) ）</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="card dialog2Wrong">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">噗噗，答錯囉！</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Wrong">
+            <div class="card-body octopusCard">
+                <h4 class="card-text">章魚妞妞：</h4>
+                <p class="card-text">還不趕快過來人家這邊，啾咪～</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog2Wrong">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">不．．．不要啊，救命啊，趕快誰來救我．．．</p>
+                <button class="btnDialog2 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <!-- octopus end -->
+
+        <!-- hammer start -->
+        <div class="card dialog3Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">怎麼又有人擋路．．．</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">唉唷，這不是我們十年得以一見、百年毫無建樹的隊！長！大！人！嗎？</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">（又來了一個討厭的傢伙．．．）</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">我說隊長啊，你看看我這閃閃亮的大眼睛、強而有力的身驅．．．</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">怎麼樣？是不是還是我比較適合當隊長呀？</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">這個嘛．．．要做隊長不能只有外表，還得要有智慧</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">聽你這麼說．．．你很懂喔？那我出什麼問題你都應該答得出來囉？</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">（又來了．．．）</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Before">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">塑膠飲料杯當中，那一個部分是不能被回收的？</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="optDiv">
+            <button class="btn option3">杯蓋</button>
+            <button class="btn option3" value="correct">吸管</button>
+            <button class="btn option3">塑膠杯</button>
+        </div>
+
+
+        <div class="card dialog3Correct">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">你這不是很懂嘛！！</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Correct">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">好吧，這次算我輸了．．．要錢還是要我珍藏的寶物，快說吧！</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Correct">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">我只是要過去．．．</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Correct">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">這．．．這樣啊，那快過吧</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="card dialog3Wrong">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">我看你完全是不懂喔！</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Wrong">
+            <div class="card-body hammerCard">
+                <h4 class="card-text">雙髻鯊大目：</h4>
+                <p class="card-text">嘿嘿嘿，隊長位置還是給我吧，納命來～</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog3Wrong">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">（打不過這傢伙，我看我還是快逃吧～）</p>
+                <button class="btnDialog3 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <!-- hammer end -->
+
+        <!-- seal start -->
+        <div class="card dialog4Before">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">哎嘿～這不是隊長大大嗎？這麼想我呀，昨天才見面，今天又跑來找我了</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">喔不是．．．我只是要過．．．</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">我知道我知道，思念是一種病，沒有藥醫的病，真的很傷腦筋</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">不不．．．你聽我．．．</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">沒錯沒錯，我懂，太迷人也不是件好事；被這麼多隊員仰慕著的我，也因此受很多苦頭呢</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">喂！就跟你說我只是想過去啦！！！</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">No！No！No！就算是隊長大大也不能這麼冒犯，為了徵罰你，你要回答我一個問題</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Before">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">下面哪一個不屬於「塑膠回收標誌」？</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="optDiv">
+            <button class="btn option4">PVC</button>
+            <button class="btn option4">PS</button>
+            <button class="btn option4" value="correct">PEP</button>
+        </div>
+
+
+        <div class="card dialog4Correct">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">不錯嘛，答對了。看你還算是個人才，就讓你成為皮皮粉絲會的VIP會員吧</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Correct">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">過去吧，BYE BYE</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+
+        <div class="card dialog4Wrong">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">嘖嘖，連這個問題都不會，想當我的粉絲都還不夠格呢！</p>
+                <button class="btndialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Wrong">
+            <div class="card-body sealCard">
+                <h4 class="card-text">海豹皮皮：</h4>
+                <p class="card-text">回家洗洗睡去吧～</p>
+                <button class="btnDialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <div class="card dialog4Wrong">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">（怎麼我的隊員一個個都這個樣，算了，回家靜靜思考我的魚生吧．．．）</p>
+                <button class="btnDialog4 btn btn-primary">下一步</button>
+            </div>
+        </div>
+        <!-- seal end -->
+
+        <!-- final -->
+        <div class="card dialogFinal">
+            <div class="card-body bbCard">
+                <h4 class="card-text">隊長bb：</h4>
+                <p class="card-text">呼呼，終於到沙灘了！這些隊員還真是不好惹，好佳在都答對問題了，看來我的減塑功力還是寶刀未老呢！</p>
+                <button class="btnDialogFinal btn btn-primary">跳舞</button>
+            </div>
+        </div>
+        <!-- final end-->
+
+        <div id="bgImg"></div>
+
+    </div>
+
+    <script src="./all.js"></script>
+    <script src="./bb-qa-game.js"></script>
+
+</body>
+
+</html>
