@@ -57,7 +57,7 @@
 @keyframes bbDance{
     0%   {background-image: url('./_img/bb-dance/bb-origin.png');}
     25%   {background-image: url('./_img/bb-dance/bb-swing.png');}
-    50%   {background-image: url('./_img/bb-dance/bb-origin-horizon.png');}
+    50%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb-dance/bb-origin-horizon.png');}
     75%   {background-image: url('./_img/bb-dance/bb-swing-horizon.png');}
     100%   {background-image: url('./_img/bb-dance/bb-origin.png');}
 }
