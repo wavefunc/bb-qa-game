@@ -15,7 +15,7 @@
     width: 2128px;
     height: 400px;
     z-index: -1;
-    background-image: url('https://chi01pap002files.storage.live.com/y4m4Ge8h84jZGfTey_Upqd4mxCmA3LgNvwq3OZqdEqy-IxWKSbe2pbwTundok2pbOc6FwZXRLnUwGiD4NfWzleM0p-de8BqfrkG5tOMe4IxtVqhoW-v3jaxGKcjbX5egi3ceBYh42w1Sv62OhGeLbGNcmTTw16QbP1AQLaYEq5HOf71CebcD1lNQ3AYsQAZ367s?width=2128&height=400&cropmode=none');
+    background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/scroll-background.png');
     background-repeat: repeat-x;
     animation: rollBgImage linear 12s infinite paused;
 }
@@ -55,11 +55,11 @@
 }
 
 @keyframes bbDance{
-    0%   {background-image: url('./_img/bb-dance/bb-origin.png');}
-    25%   {background-image: url('./_img/bb-dance/bb-swing.png');}
+    0%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb-dance/bb-origin.png');}
+    25%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb-dance/bb-swing.png');}
     50%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb-dance/bb-origin-horizon.png');}
-    75%   {background-image: url('./_img/bb-dance/bb-swing-horizon.png');}
-    100%   {background-image: url('./_img/bb-dance/bb-origin.png');}
+    75%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb-dance/bb-swing-horizon.png');}
+    100%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb-dance/bb-origin.png');}
 }
 
 /* 開始前的遮幕 */
@@ -101,16 +101,16 @@
     animation: rollRightImage 3s linear 2s both paused;
 }
 #turtleIcon {
-    background-image: url('./_img/bb/turtle.png');
+    background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/turtle.png');
 }
 #octopusIcon {
-    background-image: url('./_img/bb/octopus.png');
+    background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/octopus.png');
 }
 #hammerIcon {
-    background-image: url('./_img/bb/hammer.png');
+    background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/hammer.png');
 }
 #sealIcon {
-    background-image: url('./_img/bb/seal.png');
+    background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/seal.png');
 }
 
 
