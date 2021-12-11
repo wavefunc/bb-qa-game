@@ -42,16 +42,16 @@
     position: relative;
     width: 100px;
     height: 100px;
-    background-image: url('./_img/bb/bb-move01.png');
+    background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/bb-move01.png');
     background-size: cover;
     background-repeat: no-repeat;
     animation: swapImage 0.4s step-start infinite paused;
 }
 
 @keyframes swapImage{
-    0%   {background-image: url('./_img/bb/bb-move01.png');}
-    50%  {background-image: url('./_img/bb/bb-move02.png');}
-    100% {background-image: url('./_img/bb/bb-move01.png');}
+    0%   {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/bb-move01.png');}
+    50%  {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/bb-move02.png');}
+    100% {background-image: url('https://raw.githubusercontent.com/wavefunc/bb-qa-game/main/_img/bb/bb-move01.png');}
 }
 
 @keyframes bbDance{
